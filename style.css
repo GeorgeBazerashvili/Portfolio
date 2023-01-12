@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  background: rgb(66, 26, 112);
+  background: black;
+}
+
+.appeardissapear {
+  visibility: hidden;
+}
+
+.appear {
+  visibility: visible;
+}
+
+.visible {
+  display: flex;
+  width: 100%;
+  background: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.visibleornot {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  z-index: 0;
+}
+
+.hamburger {
+  position: absolute;
+  font-size: 2rem;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+span {
+  color: rgb(225, 55, 55);
+}
+
+header {
+  width: 100%;
+  height: 4.5rem;
+  align-items: center;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  word-break: keep-all;
+  font-size: 1.7rem;
+  z-index: 1;
+  background: black;
+}
+
+li:hover {
+  background: rgb(48, 44, 44);
+}
+
+li:hover a {
+  color: red;
+}
+
+.company {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.section1 {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding-left: 7rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+}
+
+.front-end {
+  font-size: 2rem;
+}
+
+.home {
+  line-height: 3.5rem;
+}
+
+.bazera {
+  font-size: 2.5rem;
+}
+
+i {
+  font-size: 2.8rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+
+a:hover {
+  color: red;
+}
+
+.section2 {
+  height: auto;
+  width: 100%;
+  background: #f5f5f5;
+  padding-top: 5rem;
+  padding-inline: 1.5rem;
+  text-align: center;
+}
+
+.section2 * {
+  color: black;
+}
+
+.company a:hover {
+  color: white;
+}
+
+.section2__a {
+  width: 100px;
+}
+
+.about__me {
+  color: rgb(232, 22, 22);
+  font-size: 3rem;
+}
+
+.description {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.projects__text {
+  font-size: 3rem;
+  color: red;
+  margin-top: 1rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  row-gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.projects img {
+  width: 8rem;
+}
+
+.projects p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1220px) {
+  li {
+    font-size: 1.8rem;
+  }
+
+  .company {
+    font-size: 1.7rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    visibility: visible;
+  }
+
+  .about__me {
+    font-size: 3.5rem;
+  }
+
+  .description {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .front-end {
+    font-size: 1.5rem;
+  }
+
+  .bazera {
+    font-size: 2rem;
+  }
+
+  .section1 {
+    padding-left: 3.5rem;
+  }
+
+  .about__me {
+    font-size: 3rem;
+  }
+
+  .projects__text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .section1 {
+    padding-left: 3.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .section2 {
+    padding-inline: 3rem;
+  }
+
+  .front-end {
+    font-size: 1.1rem;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .projects p {
+    font-size: 1.5rem;
+  }
+
+  .projects img {
+    width: 9rem;
+  }
+
+  .about__me {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+    margin-inline: 2rem;
+  }
+
+  .home {
+    line-height: 2.2rem;
+  }
+
+  .bazera {
+    font-size: 1.4rem;
+  }
+
+  i {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .front-end {
+    font-size: 0.9rem;
+  }
+
+  .home {
+    line-height: 2rem;
+  }
+
+  i {
+    font-size: 1.4rem;
+  }
+
+  .bazera {
+    font-size: 1.2rem;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .section2 {
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-inline: 3rem;
+  }
+
+  .projects__text {
+    font-size: 1.8rem;
+  }
+
+  .projects p {
+    font-size: 0.8rem;
+  }
+
+  .about__me {
+    font-size: 2rem;
+  }
+
+  .projects img {
+    width: 5rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .front-end {
+    font-size: 0.7rem;
+  }
+
+  .bazera {
+    font-size: 1rem;
+  }
+
+  .home {
+    line-height: 2.2rem;
+  }
+
+  .section1 {
+    padding-left: 2rem;
+  }
+
+  i {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .hamburger {
+    visibility: hidden;
+  }
+
+  li {
+    font-size: 2rem;
+  }
+
+  .company {
+    font-size: 2.5rem;
+  }
+
+  .bazera {
+    font-size: 3rem;
+  }
+
+  .front-end {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .home {
+    line-height: 5rem;
+  }
+
+  i {
+    font-size: 4rem;
+  }
+}
